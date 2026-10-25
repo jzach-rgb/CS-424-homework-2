@@ -47,3 +47,31 @@ Then I looked at temporal patterns. Beverage records peaked at 10 AM, with 461 o
 Finally, I investigated temperature preferences and discovered that approximately 32% of beverage records lacked an explicitly recorded temperature. This made certain hot-versus-iced comparisons potentially misleading. I decided to preserve these missing values rather than make assumptions about customer selections.
 
 Overall, the exploratory analysis helped narrow my focus toward three potential visualization directions: normalized modifier comparisons, temporal purchasing patterns, and relationships between drink types and modifiers. It also highlighted the importance of accounting for missing information and differences in drink popularity when interpreting results.
+
+## Task 4
+
+
+
+
+## Task 4: Implement Visualization Alternatives
+
+### Milk Preferences by Drink Type
+
+I created a normalized stacked bar chart to compare milk preferences across five drink types. The chart uses bars as marks, with length representing percentages and color distinguishing milk types. Whole milk was the most common across all drinks, while oat milk was the most popular alternative, especially for Matcha Lattes. I decided to keep this approach because it makes comparisons easy, although the number of milk categories makes some smaller proportions difficult to distinguish.
+
+<img width="1700" height="850" alt="A_milk_composition" src="https://github.com/user-attachments/assets/becfd0a5-1f7e-408f-98a1-0c828091e2c2" />
+
+### Oat Milk Preferences by Hour
+
+I created a heatmap to investigate how oat milk preferences vary by drink type and time of day. The visualization uses rectangular cells as marks, with position representing drink type and hour, and color intensity representing the percentage of oat milk selections. Matcha Lattes showed a relatively high oat milk percentage at 2 PM (43%), while Chai Lattes varied considerably throughout the day. I would modify this approach by considering sample sizes because some hourly percentages may be based on relatively few observations.
+
+<img width="1530" height="646" alt="B_oat_hour_heatmap" src="https://github.com/user-attachments/assets/2f31514a-ef51-489b-a978-02eaa845e159" />
+
+### Hourly Drink Purchasing Patterns
+
+I created a line chart to compare when Lattes, Matcha Lattes, and Chai Lattes were purchased throughout the day. The chart uses lines and points as marks, with horizontal position representing time, vertical position representing the percentage of each drink's sales, and color distinguishing the drink types. Lattes peaked at 10 AM, while Chai Lattes showed a higher proportion of purchases at 9 AM, noon, and 3 PM. I decided to keep this visualization because it makes temporal trends easy to compare, although it does not explain the causes of those patterns.
+
+<img width="1800" height="900" alt="C_drink_hourly_lines" src="https://github.com/user-attachments/assets/72b50c83-478a-4ae7-8d04-50084305a52a" />
+
+
+All three visualizations revealed different aspects of customer behavior. Direction A was most effective for comparing milk preferences, Direction B helped identify hourly differences in oat milk selection, and Direction C made overall purchasing patterns easier to interpret. I would continue refining Direction B because it combines drink customization with temporal patterns, although I would need to address potentially misleading percentages caused by small sample sizes.
