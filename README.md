@@ -23,3 +23,27 @@ I began by selecting the columns relevant to my questions and then converted dat
 
 One challenge I had was differrntiating missing information from actual customer preferences. For example, some beverage records did not explicitly specify a temperature or milk type. For the milk's with nothing specified, I defulted all to whole since the baristas tend to not select anything for whole milk prefrence since there is no charge but for temperture prefrence, rather than assigning default values, I kept these as missing to avoid potentially misleading results. I also marked drink-specific attributes as inapplicable for food and merchandise. The resulting dataset has everything I need to investigate drink customization, temporal patterns, and relationships between different modifiers.
 
+
+## Task 3
+
+<img width="1620" height="972" alt="01_top_drinks" src="https://github.com/user-attachments/assets/97a0fd3f-c727-4a0d-b6d0-911d7eff7efd" />
+
+I first examined the distribution of beverage types and found that lattes represented the largest portion of the dataset, with 1,116 records. This gave me a potential problem with comparing raw modifier frequencies, since popular drinks naturally contribute more observations. As a result, I explored normalized comparisons of milk preferences across different beverages.
+
+<img width="1800" height="990" alt="02_milk_by_drink" src="https://github.com/user-attachments/assets/5216df53-1fe9-4b75-a87a-968e8ce2a9ab" />
+
+I examined milk preferences across five drink types using a normalized stacked bar chart. Whole milk was the most common across all drinks, while oat milk was the most popular alternative, especially for Matcha Lattes. Coffee had the highest proportion of whole milk at approximately 80%, while Matcha Lattes had the lowest at around 58%. Using percentages instead of raw counts made comparing drinks easier, although missing milk information may affect the results.
+
+<img width="1620" height="954" alt="03_syrup_frequency" src="https://github.com/user-attachments/assets/9368a91c-8197-45cd-bb0b-19f2e3415697" />
+
+Then, I investigated syrup preferences. Cinnamon Roll and Vanilla were the most commonly recorded flavors, appearing in 611 and 484 beverage records, respectively. Some records contained multiple flavors, so I separated these entries when counting individual syrup selections. I also recognized that these preferences may be influenced by the limited collection period.
+
+<img width="1620" height="900" alt="04_hourly_volume" src="https://github.com/user-attachments/assets/29be0cab-5b69-4614-9435-a909da0b2ece" />
+
+Then I looked at temporal patterns. Beverage records peaked at 10 AM, with 461 observations, followed by a smaller increase around noon. This suggests that it could be helpfult to explore hourly purchasing patterns, especially when comparing different types of beverages and modifiers.
+
+<img width="1800" height="936" alt="05_temperature_completeness" src="https://github.com/user-attachments/assets/efdf43bb-f30b-455b-abad-146c4aafbded" />
+
+Finally, I investigated temperature preferences and discovered that approximately 32% of beverage records lacked an explicitly recorded temperature. This made certain hot-versus-iced comparisons potentially misleading. I decided to preserve these missing values rather than make assumptions about customer selections.
+
+Overall, the exploratory analysis helped narrow my focus toward three potential visualization directions: normalized modifier comparisons, temporal purchasing patterns, and relationships between drink types and modifiers. It also highlighted the importance of accounting for missing information and differences in drink popularity when interpreting results.
