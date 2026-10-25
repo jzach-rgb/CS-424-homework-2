@@ -75,3 +75,28 @@ I created a line chart to compare when Lattes, Matcha Lattes, and Chai Lattes we
 
 
 All three visualizations revealed different aspects of customer behavior. Direction A was most effective for comparing milk preferences, Direction B helped identify hourly differences in oat milk selection, and Direction C made overall purchasing patterns easier to interpret. I would continue refining Direction B because it combines drink customization with temporal patterns, although I would need to address potentially misleading percentages caused by small sample sizes.
+
+
+
+## Task 5
+
+I considered adding interactive filtering and multiple coordinated views to explore drink preferences more closely. But I decided to keep the current visualizations static because the limited number of categories and time intervals makes the comparisons relatively easy to interpret without interaction. The three visualizations provide complementary views of customer behavior, covering milk preferences, hourly customization patterns, and purchasing trends.
+
+## Task 6
+
+<img width="1800" height="756" alt="iteration_1_hourly_with_counts" src="https://github.com/user-attachments/assets/25c58325-a0db-4ddd-9b23-648c9df1a16e" />
+
+The original heatmap displayed oat milk percentages without showing how many records contributed to each value. This made percentages from smaller samples potentially misleading. I added sample sizes to each cell so readers could better evaluate the comparisons.
+
+
+<img width="1800" height="756" alt="iteration_2_grouped_hours" src="https://github.com/user-attachments/assets/5143329b-6caa-4ea8-8101-4e735944a26e" />
+
+Although the first iteration improved transparency, some hourly percentages still fluctuated significantly, especially for Chai Lattes. I grouped the hours into three broader periods to reduce these fluctuations and make the patterns easier to interpret. This revealed that Chai Lattes had a higher proportion of oat milk selections during the morning, while Matcha Lattes showed a higher proportion in the afternoon.
+
+
+I decided to keep the second iteration because it provides clearer comparisons with larger sample sizes, although grouping hours sacrifices some temporal detail.
+
+
+## Task 7 
+
+I selected the grouped-time oat milk heatmap as my current design because it provides a clearer comparison of milk preferences across drinks and time periods. The visualization uses rectangular cells as marks, with position representing drink type and time period, and color intensity representing the percentage of oat milk selections. Compared to the original heatmap, this version includes sample sizes and groups hours together to reduce fluctuations from smaller samples. Although grouping hours sacrifices some detail, it makes the overall patterns easier to interpret. For Assignment 3, I would evaluate whether users can accurately compare percentages and understand how sample sizes affect their interpretation.
